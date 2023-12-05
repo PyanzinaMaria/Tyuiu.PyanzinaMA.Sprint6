@@ -166,9 +166,10 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task0.V7
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxCondition);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Спринт 1 | Таск 0 | Вариант 7 | Пьянзина М.А.";
+            this.Text = "Спринт 6 | Таск 0 | Вариант 7 | Пьянзина М.А.";
             this.groupBoxCondition.ResumeLayout(false);
             this.groupBoxCondition.PerformLayout();
             this.groupBox1.ResumeLayout(false);

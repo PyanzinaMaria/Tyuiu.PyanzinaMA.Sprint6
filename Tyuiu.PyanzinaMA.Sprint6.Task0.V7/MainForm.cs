@@ -20,9 +20,14 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task0.V7
         private void buttonDone_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
-
-            textBoxResult_PMA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_PMA.Text)));
-                        
+            try
+            {
+                textBoxResult_PMA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_PMA.Text)));
+            }
+            catch
+            {
+                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         private void textBoxVarX_KeyPress(object sender, KeyPressEventArgs e)
         {
