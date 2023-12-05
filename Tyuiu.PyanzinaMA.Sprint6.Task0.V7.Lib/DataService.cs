@@ -11,8 +11,8 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task0.V7.Lib
     {
         public double Calculate(int x)
         {
-            double res = x / 2;
-            return Math.Round(res, 3);
+            double res = Math.Round(Math.Pow(x, 3) / (2 * (Math.Pow(x + 5, 2))), 3);
+            return res;
         }
     }
 }

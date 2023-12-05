@@ -17,29 +17,26 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task0.V7
         {
             InitializeComponent();
         }
-        private void buttonDone_PMA_Click(object sender, EventArgs e)
+        private void buttonDone_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
-
             try
             {
-                textBoxOutput_PMA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxInputX_PMA.Text)));
+                textBoxResult_PMA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_PMA.Text)));
             }
             catch
             {
                 MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void textBoxInputX_PMA_KeyPress(object sender, KeyPressEventArgs e)
+        private void textBoxVarX_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8) && (e.KeyChar != '-'))
+            if ((e.KeyChar <= 47 || e.KeyChar >= 58) && (e.KeyChar != ',') && (e.KeyChar != 8))
             {
                 e.Handled = true;
             }
         }
-
-        private void buttonHelp_PMA_Click(object sender, EventArgs e)
+        private void buttonHelp_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Таск 0 выполнила студентка группы ИИПб-23-1 Пьянзина Мария Алексеевна", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
