@@ -16,7 +16,7 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task0.V7
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+            Application.Run(new MainForm());
         }
     }
 }

@@ -11,23 +11,18 @@ using Tyuiu.PyanzinaMA.Sprint6.Task0.V7.Lib;
 
 namespace Tyuiu.PyanzinaMA.Sprint6.Task0.V7
 {
-    public partial class FormMain : Form
+    public partial class MainForm : Form
     {
-        public FormMain()
+        public MainForm()
         {
             InitializeComponent();
         }
         private void buttonDone_Click(object sender, EventArgs e)
         {
             DataService ds = new DataService();
-            try
-            {
-                textBoxResult_PMA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_PMA.Text)));
-            }
-            catch
-            {
-                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            textBoxResult_PMA.Text = Convert.ToString(ds.Calculate(Convert.ToInt32(textBoxVarX_PMA.Text)));
+                        
         }
         private void textBoxVarX_KeyPress(object sender, KeyPressEventArgs e)
         {
