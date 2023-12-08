@@ -18,17 +18,12 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task1.V26.Lib
             int count = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (Math.Sin(x) - 2 == 0)
-                {
-                    y = 0;
-                }
-                else
-                {
-                    y = (5 * x + 2.5) / (Math.Sin(x) - 2) + 2;
+                
+                    y = (2 * Math.Cos(x)+2) / (2 * x - 1) + Math.Cos(x) - 5 * x + 3; 
                     y = Math.Round(y, 2);
                     valueArray[count] = y;
                     count++;
-                }
+                
             }
             return valueArray;
         }

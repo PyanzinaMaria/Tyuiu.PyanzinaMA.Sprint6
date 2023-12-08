@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.PyanzinaMA.Sprint6.Task1.V26.Lib\Tyuiu.PyanzinaMA.Sprint6.Task1.V26.Lib.csproj">
+      <Project>{c380c7b4-b314-4a81-b7f4-3b84798557b7}</Project>
+      <Name>Tyuiu.PyanzinaMA.Sprint6.Task1.V26.Lib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
