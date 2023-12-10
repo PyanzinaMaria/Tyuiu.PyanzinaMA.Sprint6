@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.PyanzinaMA.Sprint6.Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.PyanzinaMA.Sprint6.Task6.V20", "Tyuiu.PyanzinaMA.Sprint6.Task6.V20\Tyuiu.PyanzinaMA.Sprint6.Task6.V20.csproj", "{1B639302-445E-4497-9C1A-2F73FA552440}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.PyanzinaMA.Sprint6.Task7.V30", "Tyuiu.PyanzinaMA.Sprint6.Task7.V30\Tyuiu.PyanzinaMA.Sprint6.Task7.V30.csproj", "{6139B2B5-2A56-4DBE-B334-F17E28C32E07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -163,6 +165,10 @@ Global
 		{1B639302-445E-4497-9C1A-2F73FA552440}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B639302-445E-4497-9C1A-2F73FA552440}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B639302-445E-4497-9C1A-2F73FA552440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6139B2B5-2A56-4DBE-B334-F17E28C32E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6139B2B5-2A56-4DBE-B334-F17E28C32E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6139B2B5-2A56-4DBE-B334-F17E28C32E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6139B2B5-2A56-4DBE-B334-F17E28C32E07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -191,6 +197,7 @@ Global
 		{7FAACF6A-6B2C-4692-BCC3-9B9E560A5855} = {513328FF-1D4B-4C39-B84A-6320A92C5A53}
 		{301B8C61-B4F4-4F86-A03A-92359D668812} = {79757988-8875-4E38-B6F3-A0EB01276931}
 		{1B639302-445E-4497-9C1A-2F73FA552440} = {70856532-39F2-4D5D-BE66-36AA10C21107}
+		{6139B2B5-2A56-4DBE-B334-F17E28C32E07} = {5F301FB1-5674-4D35-B12D-046005726079}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1501CF1-195A-46F9-8E9D-7F8E114AF1C7}
