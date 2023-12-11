@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1B639302-445E-4497-9C1A-2F73FA552440}</ProjectGuid>
+    <ProjectGuid>{C7561E5C-5483-41A8-9313-BE9CB63ECDEE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Tyuiu.PyanzinaMA.Sprint6.Task6.V20</RootNamespace>
     <AssemblyName>Tyuiu.PyanzinaMA.Sprint6.Task6.V20</AssemblyName>
