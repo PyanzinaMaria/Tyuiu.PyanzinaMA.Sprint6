@@ -31,14 +31,18 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task7.V30.Lib
                 }
             }
 
-            for (int c = 0; c < columns; c++)
+            int xCol = 0;
+
+            for (int r = 0; r < rows; r++)
             {
-                if (arrayValues[0, c] < 0)
+                for (int c = xCol; c <= xCol; c++)
                 {
-                    arrayValues[0, c] = -1; ;
+                    if (arrayValues[r, c] != 4)
+                    {
+                        arrayValues[r, c] = 8;
+                    }
                 }
             }
-
             return arrayValues;
         }
     }

@@ -11,19 +11,18 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task3.V10.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            int len = matrix.GetLength(0);
-            int[] new_array = new int[len];
+            int rows = matrix.GetUpperBound(0) + 1;
+            int columns = matrix.Length / rows;
 
-
-            for (int j = 0; j < matrix.GetLength(0); j++)
+            for (int i = 0; i < rows; i++)
             {
-                new_array[j] = matrix[j, 0];
-            }
-            Array.Sort(new_array);
-
-            for (int j = 0; j < matrix.GetLength(0); j++)
-            {
-                matrix[j, 0] = new_array[j];
+                for (int j = 0; j < columns; j++)
+                {
+                    if (matrix[4, j] % 2 == 0)
+                    {
+                        matrix[4, j] = 0;
+                    }
+                }
             }
             return matrix;
         }

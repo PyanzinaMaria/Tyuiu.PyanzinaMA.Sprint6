@@ -25,18 +25,16 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task5.V28.Lib
             double[] numsArray = new double[len];
 
             int index = 0;
-
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    numsArray[index] = Math.Round(Convert.ToDouble(line), 3);
+                    numsArray[index] = Convert.ToDouble(line);
                     index++;
                 }
             }
-
-            numsArray = numsArray.Where(val => val != 0).ToArray();
+            numsArray = numsArray.Where(val => val < 10).ToArray();
 
             return numsArray;
         }
