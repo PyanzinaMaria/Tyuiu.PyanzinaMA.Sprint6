@@ -30,15 +30,15 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task3.V10
         private void InitializeComponent()
         {
             this.groupBoxCondition_PMA = new System.Windows.Forms.GroupBox();
+            this.dataGridViewInPut_PMA = new System.Windows.Forms.DataGridView();
+            this.labelCondition_PMA = new System.Windows.Forms.Label();
             this.groupBoxOutPut_PMA = new System.Windows.Forms.GroupBox();
+            this.dataGridViewOutPut_PMA = new System.Windows.Forms.DataGridView();
             this.buttonDone_PMA = new System.Windows.Forms.Button();
             this.buttonHelp_PMA = new System.Windows.Forms.Button();
-            this.labelCondition_PMA = new System.Windows.Forms.Label();
-            this.dataGridViewInPut_PMA = new System.Windows.Forms.DataGridView();
-            this.dataGridViewOutPut_PMA = new System.Windows.Forms.DataGridView();
             this.groupBoxCondition_PMA.SuspendLayout();
-            this.groupBoxOutPut_PMA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInPut_PMA)).BeginInit();
+            this.groupBoxOutPut_PMA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutPut_PMA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,6 +54,26 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task3.V10
             this.groupBoxCondition_PMA.TabStop = false;
             this.groupBoxCondition_PMA.Text = "Условие";
             // 
+            // dataGridViewInPut_PMA
+            // 
+            this.dataGridViewInPut_PMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewInPut_PMA.ColumnHeadersVisible = false;
+            this.dataGridViewInPut_PMA.Location = new System.Drawing.Point(93, 67);
+            this.dataGridViewInPut_PMA.Name = "dataGridViewInPut_PMA";
+            this.dataGridViewInPut_PMA.RowHeadersVisible = false;
+            this.dataGridViewInPut_PMA.Size = new System.Drawing.Size(248, 232);
+            this.dataGridViewInPut_PMA.TabIndex = 1;
+            // 
+            // labelCondition_PMA
+            // 
+            this.labelCondition_PMA.AutoSize = true;
+            this.labelCondition_PMA.Location = new System.Drawing.Point(6, 22);
+            this.labelCondition_PMA.Name = "labelCondition_PMA";
+            this.labelCondition_PMA.Size = new System.Drawing.Size(469, 40);
+            this.labelCondition_PMA.TabIndex = 0;
+            this.labelCondition_PMA.Text = "Дан массив 5 на 5 элементов. Заменить четные значения в \r\nпятой строке на 0. Резу" +
+    "льтат вывести в DataGridView.";
+            // 
             // groupBoxOutPut_PMA
             // 
             this.groupBoxOutPut_PMA.Controls.Add(this.dataGridViewOutPut_PMA);
@@ -64,6 +84,16 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task3.V10
             this.groupBoxOutPut_PMA.TabIndex = 0;
             this.groupBoxOutPut_PMA.TabStop = false;
             this.groupBoxOutPut_PMA.Text = "Результат";
+            // 
+            // dataGridViewOutPut_PMA
+            // 
+            this.dataGridViewOutPut_PMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewOutPut_PMA.ColumnHeadersVisible = false;
+            this.dataGridViewOutPut_PMA.Location = new System.Drawing.Point(18, 35);
+            this.dataGridViewOutPut_PMA.Name = "dataGridViewOutPut_PMA";
+            this.dataGridViewOutPut_PMA.RowHeadersVisible = false;
+            this.dataGridViewOutPut_PMA.Size = new System.Drawing.Size(289, 264);
+            this.dataGridViewOutPut_PMA.TabIndex = 1;
             // 
             // buttonDone_PMA
             // 
@@ -92,32 +122,6 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task3.V10
             this.buttonHelp_PMA.UseVisualStyleBackColor = false;
             this.buttonHelp_PMA.Click += new System.EventHandler(this.buttonHelp_PMA_Click);
             // 
-            // labelCondition_PMA
-            // 
-            this.labelCondition_PMA.AutoSize = true;
-            this.labelCondition_PMA.Location = new System.Drawing.Point(6, 22);
-            this.labelCondition_PMA.Name = "labelCondition_PMA";
-            this.labelCondition_PMA.Size = new System.Drawing.Size(469, 40);
-            this.labelCondition_PMA.TabIndex = 0;
-            this.labelCondition_PMA.Text = "Дан массив 5 на 5 элементов. Заменить четные значения в \r\nпятой строке на 0. Резу" +
-    "льтат вывести в DataGridView.";
-            // 
-            // dataGridViewInPut_PMA
-            // 
-            this.dataGridViewInPut_PMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewInPut_PMA.Location = new System.Drawing.Point(10, 79);
-            this.dataGridViewInPut_PMA.Name = "dataGridViewInPut_PMA";
-            this.dataGridViewInPut_PMA.Size = new System.Drawing.Size(248, 232);
-            this.dataGridViewInPut_PMA.TabIndex = 1;
-            // 
-            // dataGridViewOutPut_PMA
-            // 
-            this.dataGridViewOutPut_PMA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewOutPut_PMA.Location = new System.Drawing.Point(18, 35);
-            this.dataGridViewOutPut_PMA.Name = "dataGridViewOutPut_PMA";
-            this.dataGridViewOutPut_PMA.Size = new System.Drawing.Size(289, 264);
-            this.dataGridViewOutPut_PMA.TabIndex = 1;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,10 +135,11 @@ namespace Tyuiu.PyanzinaMA.Sprint6.Task3.V10
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 3 | Вариант 10 | Пьянзина М.А.";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.groupBoxCondition_PMA.ResumeLayout(false);
             this.groupBoxCondition_PMA.PerformLayout();
-            this.groupBoxOutPut_PMA.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInPut_PMA)).EndInit();
+            this.groupBoxOutPut_PMA.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOutPut_PMA)).EndInit();
             this.ResumeLayout(false);
 
